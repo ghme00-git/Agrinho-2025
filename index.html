@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estufa Sustentável: Agro Forte, Futuro Verde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Estufa Sustentável 🍅</h1>
+            <p>Agro forte, futuro sustentável: Equilibre produção e meio ambiente!</p>
+        </header>
+
+        <section class="dashboard">
+            <div class="stat-card">
+                <h3>Produção (Tomates)</h3>
+                <p id="score-producao">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Sustentabilidade</h3>
+                <div class="progress-bar">
+                    <div id="bar-sustentabilidade" style="width: 100%;"></div>
+                </div>
+                <span id="txt-sustentabilidade">100%</span>
+            </div>
+            <div class="stat-card">
+                <h3>Saúde do Solo</h3>
+                <div class="progress-bar">
+                    <div id="bar-solo" style="width: 100%; background-color: #8B4513;"></div>
+                </div>
+                <span id="txt-solo">100%</span>
+            </div>
+        </section>
+
+        <main class="game-area">
+            <div class="greenhouse">
+                <div id="tomato-plant" class="plant stage-1">🌱</div>
+                <div class="environment-status">
+                    <p>Status da Estufa:</p>
+                    <span id="status-agua">Água: Ok</span> | 
+                    <span id="status-temp">Temp: 24°C</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <h3>Painel de Manejo</h3>
+                <button onclick="regar()">💧 Regar (Eco)</button>
+                <button onclick="fertilizarOrganico()">🍃 Adubo Orgânico</button>
+                <button onclick="fertilizarQuimico()">🧪 Fertilizante Químico (+Rápido)</button>
+                <button onclick="ajustarTemperatura()">☀️ Ajustar Clima (Estufa)</button>
+            </div>
+        </main>
+
+        <div id="feedback-mensagem" class="feedback">
+            Gerencie seus recursos para começar a colheita!
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
